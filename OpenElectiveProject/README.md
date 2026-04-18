@@ -1,106 +1,65 @@
-# 🛍️ Myntra Sales Dashboard (Power BI)
+# Myntra Sales Dashboard
 
-## 📊 Overview
+An interactive two-page Power BI dashboard that turns raw Myntra order data into actionable business insight — covering brand performance, customer behaviour, regional demand and discount effectiveness.
 
-This project presents an interactive **Power BI dashboard** analyzing Myntra sales data.
-It provides insights into sales performance, customer behavior, product trends, and discount impact.
+## Overview
 
----
+Built in Microsoft Power BI Desktop on the Kaggle Myntra dataset. The report is organised across two pages with shared slicers (Year, Brand, Sub-category, Category) that synchronise filters across the full report.
 
-## 🚀 Key Features
+- **Page 1 — Executive Summary** answers *what is selling*
+- **Page 2 — Detailed Insights** answers *who is buying and how*
 
-### 🔹 Executive Summary
+Coverage: 3,500 orders across 3,071 products and 100 customers, spanning 2023–2025.
 
-* Total Orders, Total Revenue, Avg Sales Amount
-* Repeat Purchase Rate
-* Overall business performance snapshot
+## Tech Stack
 
-### 🔹 Sales Analysis
+Power BI Desktop · DAX · Power Query (M) · Microsoft Excel · Star-Schema Data Model
 
-* Sales by Category (Beauty, Kids, Men, Women)
-* Brand-wise Revenue Analysis
-* State-wise Sales Distribution
+## Key Features
 
-### 🔹 Customer Insights
+- Six headline KPIs — Total Orders, Total Sales, Total Revenue, Avg Sales Amount, Avg Discount, Total Products
+- Brand leaderboard, category donut and product-mix analysis
+- State-wise revenue stacked by category
+- Time-series trends by day, month and quarter
+- Customer KPIs — AOV, Revenue per Customer, age-group and city breakdowns
+- Discount-bracket effectiveness chart revealing the optimal discount zone
+- Cross-page filter synchronisation
 
-* Top Customers by Sales
-* Customers by City
-* Customer Segmentation
+## Key Insights
 
-### 🔹 Product & Discount Insights
+| Metric | Value |
+|---|---|
+| Total Orders | 3,500 |
+| Total Sales | ₹26.9 L |
+| Avg Order Value | ₹770 |
+| Avg Discount | 31.6% |
+| Revenue per Customer | ₹26.9 K |
+| Top State | Punjab |
+| Top Brand | H&M |
 
-* Product Category Performance
-* Discount vs Sales Analysis
-* Order trends across discount brackets
+- Optimal discount zone is 20%–40% — order volume peaks in this bracket
+- Punjab and Uttar Pradesh lead revenue, ahead of traditional markets
+- 26–35 age group accounts for nearly half of all customers
 
----
-
-## 🧩 Dashboard Pages
-
-### 📍 Page 1: Executive Summary
-
-* High-level KPIs
-* Category distribution
-* Brand performance overview
-
-### 📍 Page 2: Sales Deep Dive
-
-* Detailed breakdown by:
-
-  * City
-  * Brand
-  * Discount
-  * Customer behavior
-
----
-
-## 🛠️ Tools & Technologies
-
-* **Power BI** (Data Visualization)
-* **DAX** (Measures & Calculations)
-* **Excel / CSV Dataset**
-
----
-
-## 📷 Dashboard Preview
-
-*(Add screenshots here after uploading images to GitHub)*
-
----
-
-## 📈 Key Insights
-
-* Certain brands contribute significantly to total revenue
-* Discounts influence order volume but not always revenue proportionally
-* Sales vary across states and categories
-* Repeat customers form a key part of revenue
-
----
-
-## 📂 How to Use
+## How to Use
 
 1. Download the `.pbix` file
-2. Open in **Power BI Desktop**
-3. Interact with filters and visuals
+2. Open in Power BI Desktop
+3. Repoint the data source to the bundled `Myntra_dataset.xlsx` if prompted
+4. Interact with the slicers to filter both pages
 
----
+## Future Improvements
 
-## 📌 Project Structure
+- Sales forecasting with Power BI built-in or Python scripts
+- RFM-based customer segmentation (Recency-Frequency-Monetary)
+- Drill-through pages for each brand and customer
+- Row-Level Security for state-wise access control
+- Live data connection with scheduled refresh
 
-* `myntra_dashboard.pbix` → Main dashboard file
-* `dataset.csv` → Source dataset (if included)
-* `README.md` → Project documentation
+## Acknowledgment
 
----
+Dataset sourced from Kaggle and used for academic and learning purposes.
 
-## ⭐ Future Improvements
+## Author
 
-* Add forecasting (sales trends)
-* Include customer churn analysis
-* Enhance UI/UX with advanced visuals
-
----
-
-## 🙌 Acknowledgment
-
-Dataset sourced from public data platforms (e.g., Kaggle) and used for learning purposes.
+**Paavan Fatepuria** 
