@@ -1,0 +1,1 @@
+Two-page Power BI dashboard analyzing 3,500 Myntra orders across 2023–2025. Built with DAX, star-schema modelling and interactive slicers covering sales, customers, regions and discount effectiveness.
